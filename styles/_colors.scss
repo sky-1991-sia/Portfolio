@@ -1,0 +1,23 @@
+
+
+@mixin bg-primary {
+    background: #ffff;
+}
+@mixin bg-secondary {
+    background: #EDEDED;
+}
+@mixin bg-black {
+    background: #000;
+}
+
+@mixin c-primary {
+    color: #fff;
+}
+@mixin c-secondary {
+    color: #EDEDED;
+}
+@mixin c-black {
+    color: #000;
+}
+
+

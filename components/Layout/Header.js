@@ -13,7 +13,6 @@ const Header = () => {
         <div className='bar'>
              <IMAGE src={Bar} alt="HamBar" width = {80} height= {45}/>
         </div>
-        
         <Navbar/>
     </header>
   )

@@ -1,6 +1,8 @@
+@import 'colors';
 
-
+//mobile first
 .Header{
+   font-family: "ROBOTO";
    height: 80px;
    display: flex;
    flex-direction: row;
@@ -9,7 +11,7 @@
    position: fixed;
    width: 100%;
    top: 0;
-   background-color: white;
+   @include bg-primary;
 
    &::after{
        content: '';
@@ -18,7 +20,7 @@
        position: absolute;
        left: 0;
        bottom: 0;
-       background: rgba(0, 0, 0, 0.07);
+       @include bg-secondary;
        z-index: -1;
    }
 
@@ -36,18 +38,16 @@
    }
 }
 
-
 .Nav{
-    background:#EDEDED;
+    @include bg-secondary;
     position: fixed;
     bottom: 0;
     height: 60px;
     width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    ul{
+    &__List{
         list-style: none;
         display: flex;
         align-items: center;
@@ -55,7 +55,6 @@
         height: 100%;
         li {
                 cursor: pointer;
-                font-family: "ROBOTO";
                 font-weight: bold;
                 height: 100%;
                 display: flex;
@@ -65,8 +64,8 @@
             }
         
             li.active {
-                background: #000;
-                color: #ffff;
+                @include bg-black;
+                @include c-primary;
             }
     }
     .auth{
@@ -80,37 +79,28 @@
     }
 }
 
+//desktop
 @media screen and (min-width:900px) {
     .Nav{
         background: none;
         border-top: none;
-        position: fixed;
         top: 40px;
         height: 40px;
         width: 100%;
         justify-content: flex-end;
         padding-right: 1rem;
         z-index: 2;
-        ul{
+        &__List{
             height: 47px;
             display: flex;
             align-items: center;
             padding-inline-start: 0;
             box-shadow: 0px 0px 5px rgba(1, 1, 1, 0.157);
             li{
-                cursor: pointer;
-                background: #ffff;
-                font-family: "ROBOTO";
-                font-weight: bold;
+                @include bg-primary;
                 height: 100%;
-                display: flex;
-                align-items: center;
                 padding: 0 2rem;
                 z-index: 22;
-            }
-            li.active{
-                background: #000;
-                color: #ffff;
             }
         }
 
@@ -118,21 +108,21 @@
 
     
 }
+
+//tablet
 @media screen and (min-width:550px) and (max-width:899px) {
     .Nav{
-        background: #fff;
+        flex-direction: column;
+        @include bg-primary;
         border-top: none;
         border-left: 1px solid rgba(0, 0, 0, 0.07);
-        position: fixed;
         top: 80px;
         width: 15%;
         height: 100vh;
         right: 0;
-        justify-content: space-between;
         padding-right: 0;
         z-index: 2;
-        flex-direction: column;
-        ul{
+        &__List{
             margin-top: 8rem;
             height: 47px;
             width: 100%;
@@ -142,37 +132,20 @@
             flex-direction: column;
             padding-inline-start: 0;
             li{
-                cursor: pointer;
-                background: #ffff;
-                font-family: "ROBOTO";
-                font-weight: bold;
+                @include bg-primary;
                 height: 100%;
                 width: 100%;
-                display: flex;
-                align-items: center;
                 justify-content: center;
                 padding: 1.5rem;
                 z-index: 22;
             }
-            li.active{
-                background: #000;
-                color: #ffff;
-                width: 105%;
-            }
         }
-
-                .auth {
-                    width: 120px;
-                    height: 30%;
-                    padding: 0 1rem;
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    cursor: pointer;
-                }
+            .auth {
+                width: 120px;
+                height: 30%;
+                padding: 0 1rem;
+            }    
     }
-
-    
 }
 
 
