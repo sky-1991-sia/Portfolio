@@ -6,17 +6,18 @@ import Image from 'next/image'
 import { useState } from 'react'
 
 const Navbar = () => {
-  const [ user, setUser] = useState(false)
-  const [active,setActive] = useState('Home')
-
+  //temperary(must change with auth)
+  const [ user, setUser] = useState(false);
   const userHandler = () => {
     setUser((pre) => !pre)
   }
+  
+  //toggle navItems active/deactive
+  const [active,setActive] = useState('Home')
   const activeHandler = (e) => {
-    
     setActive(e.target.getAttribute('data-content'));
-
   }
+  
   return (
     <nav className="Nav">
         

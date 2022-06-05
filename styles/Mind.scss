@@ -1,0 +1,40 @@
+ .test{
+     display: flex;
+     width: 100%;
+     justify-content: flex-end;
+     align-items: center;
+     border: 5px solid red;
+ }
+ 
+ .svg {
+     width: 100vw!important;
+     height: auto;
+     border: 5px solid blue;
+ }
+
+ @media screen and (min-width: 1000px) {
+     .svg {
+        width: 35vw !important;
+            height: auto;
+     border:5px solid rgb(0, 255, 4);
+     }
+
+ }
+
+ @media screen and (max-width: 1000px) and (min-width: 700px) {
+     .svg {
+        width: 75vw !important;
+            height: auto;
+     border:5px solid rgb(183, 5, 142);
+     }
+         .test {
+             display: flex;
+             width: 100%;
+             justify-content: flex-start;
+             align-items: center;
+             border: 5px solid red;
+         }
+
+ }
+  
+  

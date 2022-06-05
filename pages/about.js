@@ -1,8 +1,11 @@
 import React from 'react'
+import Icon from '../components/Icon'
 
 const about = () => {
   return (
-    <div style={{marginTop : '10rem'}}>About</div>
+    <div className='about' style={{marginTop : '10rem'}}>
+      <Icon/>
+    </div>
   )
 }
 
