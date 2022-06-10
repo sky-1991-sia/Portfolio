@@ -4,7 +4,7 @@ import SkillsIntroSvg from '../components/SkillsIntroSvg'
 const about = () => {
   return (
     <main className='about' style={{marginTop : '8rem'}}>
-      <SkillsIntroSvg/>
+     <h2>About</h2>
     </main>
   )
 }
