@@ -2,17 +2,21 @@
 
 .Intro{
     font-family: 'ROBOTO';
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem;
+    padding-top: 0;
     display: grid;
     justify-content: center;
     &__card{
         min-width: 400px;
         // box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.206);
         padding: 2rem;
+        padding-top: 0;
         display: grid;
         //NAME and TITLE
         &__name{
             // @include c-primary;
+            color: rgba(0, 0, 0, 0.551);
+            font-weight: bold;
         }
         &__title{
             font-size: 3rem;
@@ -26,13 +30,14 @@
             margin-bottom: 2rem;
             &__item{
                 line-height: 1.5rem;
-
+                color: rgba(0, 0, 0, 0.551);
+                font-weight: bold;
                 &::before{
                             content: '';
                             display: inline-block;
-                            height: 0.75rem;
-                            width: 0.75rem;
-                            background: black;
+                            height: 0.65rem;
+                            width: 0.65rem;
+                            background: rgba(0, 0, 0, 0.349);
                             border-radius: 50%;
                             margin-right: 1rem;
                         }
