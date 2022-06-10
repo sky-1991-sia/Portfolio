@@ -4,7 +4,7 @@ const Intro = () => {
   return (
     <section className={styles.Intro}>
        <div className={styles.Intro__card}>
-         <span className={styles.Intro__card__name}>Hii,i'm Sky</span>
+         <span className={styles.Intro__card__name}>Hii,I`m Sky</span>
        <h1 className={styles.Intro__card__title}>Web Developer</h1>
        <ul className={styles.Intro__card__list}>
          <IntroSkillItem content={'react developer'}/>
