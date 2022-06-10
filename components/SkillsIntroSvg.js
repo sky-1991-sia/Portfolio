@@ -1,13 +1,12 @@
-import React from "react";
 
-function Icon() {
+function SkillsIntroSvg() {
   const hadlerOne = (e) => {
     e.target.style.opacity = '1';
   }
   const hadlerTwo = (e) => {
     setTimeout(() => {
       e.target.style.opacity = '0';
-    },2000)
+    },1500)
   }
   return (
     <svg className="SVG--skills"
@@ -1112,4 +1111,4 @@ function Icon() {
   );
 }
 
-export default Icon;
+export default SkillsIntroSvg;

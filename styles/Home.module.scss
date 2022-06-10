@@ -1,7 +1,15 @@
 .Main{
-   min-height: 200vh;
-   margin-top: 80px;
+   margin-top: 50px;
    display: grid;
-   justify-items: center;
    padding-top: 2.5rem;
+   grid-template-rows : repeat(1, 1fr);
+
 }
+
+@media screen and (min-width:900px){
+   .Main{
+      grid-template-columns : repeat(2, 1fr);
+      padding-top: 5rem;
+   }
+}
+

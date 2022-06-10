@@ -1,11 +1,11 @@
 import React from 'react'
-import Icon from '../components/Icon'
+import SkillsIntroSvg from '../components/SkillsIntroSvg'
 
 const about = () => {
   return (
-    <div className='about' style={{marginTop : '8rem'}}>
-      <Icon/>
-    </div>
+    <main className='about' style={{marginTop : '8rem'}}>
+      <SkillsIntroSvg/>
+    </main>
   )
 }
 
