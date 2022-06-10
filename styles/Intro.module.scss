@@ -2,12 +2,12 @@
 
 .Intro{
     font-family: 'ROBOTO';
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     display: grid;
     justify-content: center;
     &__card{
         min-width: 400px;
-        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.206);
+        // box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.206);
         padding: 2rem;
         display: grid;
         //NAME and TITLE
