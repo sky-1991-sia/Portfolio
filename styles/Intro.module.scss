@@ -1,13 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
+/* font-family: 'Oswald',
+sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+// font-family: 'Arvo',
+// serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Elsie:wght@400;900&family=Palanquin:wght@400;500;600&display=swap');
+// font-family: 'Elsie',
+// cursive;
+// font-family: 'Palanquin',
+// sans-serif;
+
 @import 'colors' ;
 
 .Intro{
     font-family: 'ROBOTO';
-    padding: 1rem;
+    // padding: 1rem;
     padding-top: 0;
     display: grid;
     justify-content: center;
     &__card{
-        min-width: 400px;
+        min-width: 250px;
+        max-width: 500px;
+        // max-height: 400px;
         // box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.206);
         padding: 2rem;
         padding-top: 0;
@@ -16,10 +31,11 @@
         &__name{
             // @include c-primary;
             color: rgba(0, 0, 0, 0.551);
-            font-weight: bold;
+            font-family: 'Palanquin';
+            font-weight: bolder;
         }
         &__title{
-            font-size: 3rem;
+            font-size: 2rem;
             line-height: 0rem;
         }
 
@@ -28,10 +44,11 @@
             list-style: none;
             justify-self: end;
             margin-bottom: 2rem;
+            margin-top: 0;
             &__item{
                 line-height: 1.5rem;
-                color: rgba(0, 0, 0, 0.551);
-                font-weight: bold;
+                color: rgb(0, 0, 0);
+                font-family: 'Palanquin';
                 &::before{
                             content: '';
                             display: inline-block;
@@ -48,6 +65,7 @@
         // BTN
         &__btn{
             width: 100%;
+            max-height: 4rem;
             padding: 0.85rem 0;
             border: 2px solid rgba(0, 0, 0, 0);
             border-radius: 50px;
@@ -68,5 +86,111 @@
         }
 
 
+    }
+}
+
+
+
+
+
+// TABLET
+@media screen and (min-width:550px) and (max-width:899px) {
+    .Intro {
+            font-family: 'ROBOTO';
+            padding: 1rem;
+            padding-top: 0;
+            display: grid;
+            justify-content: center;
+    
+            &__card {
+                min-width: 250px;
+                max-width: 500px;
+                // max-height: 400px;
+                // box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.206);
+                padding: 2rem;
+                padding-top: 0;
+                display: grid;
+    
+                //NAME and TITLE
+                &__name {
+                    // @include c-primary;
+                    color: rgba(0, 0, 0, 0.551);
+                    font-family: 'Palanquin';
+                    font-weight: bolder;
+                }
+    
+                &__title {
+                    font-size: 2rem;
+                    line-height: 1rem;
+                }
+    
+                //LIST
+                &__list {
+                    list-style: none;
+                    justify-self: end;
+                    margin-bottom: 2rem;
+                    margin-top: 0;
+    
+                    &__item {
+                        line-height: 1.5rem;
+                        color: rgb(0, 0, 0);
+                        font-family: 'Palanquin';
+    
+                        &::before {
+                            content: '';
+                            display: inline-block;
+                            height: 0.65rem;
+                            width: 0.65rem;
+                            background: rgba(0, 0, 0, 0.349);
+                            border-radius: 50%;
+                            margin-right: 1rem;
+                        }
+    
+                    }
+                }
+    
+                // BTN
+                &__btn {
+                    width: 100%;
+                    max-height: 4rem;
+                    padding: 0.85rem 0;
+                    border: 2px solid rgba(0, 0, 0, 0);
+                    border-radius: 50px;
+                    font-family: 'ROBOTO';
+                    font-weight: bold;
+                    letter-spacing: 5px;
+                    @include bg-black;
+                    @include c-primary;
+                    transition: background-color 1s ease-in-out;
+                    cursor: pointer;
+    
+                    &:hover {
+                        @include bg-primary;
+                        @include c-black;
+                        border: 2px solid black;
+                        letter-spacing: 1px;
+                    }
+                }
+    
+    
+            }
+        }
+}
+
+//DESKTOP
+@media screen and (min-width:1200px) {
+.Intro {
+        &__card {
+            max-height: 400px;
+            max-width: 410;
+            //NAME and TITLE
+            &__name {
+                font-size: 1.15rem;
+            }
+            &__title {
+                font-size: 3rem;
+                // line-height: 0rem;
+            }
+        }
     }
 }

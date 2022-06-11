@@ -1,10 +1,12 @@
+
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, Roboto, BlinkMacSystemFont, Segoe UI,  Oxygen,
+  font-family: -apple-system, Roboto, Oswald, BlinkMacSystemFont, Segoe UI,  Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    min-height: 100vh;
     position: relative;
     -ms-overflow-style: none;
       /* IE and Edge */
@@ -24,92 +26,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-
-/* ////////////////////////////////////// */
-.mine {
-  color: red;
-}
-
-.svg {
-  width: 50%;
-  height: auto;
-}
-
-.cls-1,
-.cls-10,
-.cls-11,
-.cls-12,
-.cls-4,
-.cls-6,
-.cls-9 {
-  fill: none;
-}
-
-.cls-1 {
-  stroke: #c9caca;
-  stroke-miterlimit: 10;
-}
-
-.cls-1,
-.cls-4,
-.cls-6 {
-  stroke-width: 3px;
-}
-
-.cls-2 {
-  fill: #cccccb;
-}
-
-.cls-3 {
-  fill: #fff;
-}
-
-.cls-4 {
-  stroke: #bcbec0;
-}
-
-.cls-5 {
-  fill: #efd81e;
-}
-
-.cls-6 {
-  stroke: #c2c1c0;
-}
-
-.cls-7 {
-  fill: #1b74ba;
-}
-
-.cls-8 {
-  fill: #8bcdf1;
-}
-
-.cls-10,
-.cls-11,
-.cls-12 {
-  stroke: #7ed1e4;
-}
-
-.cls-11 {
-  stroke-miterlimit: 4;
-}
-
-.cls-13 {
-  fill: #3fc6eb;
-  isolation: isolate;
-  opacity: 0.47;
-}
-
-.cls-14 {
-  fill: #4259a8;
-}
-
-.cls-15 {
-  fill: #f89a1f;
-}
-
-#JS:hover .cls-4 {
-  stroke: #efd81e;
 }

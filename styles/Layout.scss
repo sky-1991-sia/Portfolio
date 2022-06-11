@@ -88,8 +88,9 @@
     @include c-primary;
     display: grid;
     place-content: center;
-    margin-top: 50rem;
     padding-bottom: 60px;
+    //temperary/must delete this lane later
+    margin-top: 40rem;
 }
 
 .SVG--skills {

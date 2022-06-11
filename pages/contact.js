@@ -1,7 +1,9 @@
 
 const contact = () => {
   return (
-        <div style={{marginTop : '10rem'}}>Contact</div>
+         <main className='about' style={{marginTop : '8rem'}}>
+     <h2>Contact</h2>
+    </main>
   )
 }
 

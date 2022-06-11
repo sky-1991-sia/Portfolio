@@ -1,7 +1,9 @@
 
 const index = () => {
   return (
-    <div style={{marginTop:'10rem'}}>projects psge</div>
+    <main className='about' style={{marginTop : '8rem'}}>
+     <h2>Projects</h2>
+    </main>
   )
 }
 

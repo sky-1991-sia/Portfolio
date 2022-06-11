@@ -6,7 +6,7 @@ const Navitem = ({path,handler,active}) => {
   return (
     <Link href={path}>
         <li data-content = {path} onClick={handler} className={active === path ? 'active' : ''}>
-             <a data-content = {path} className='Nav__Link'>{path ==='/' ? 'Home': capName }</a>
+             <a href={path} data-content = {path} className='Nav__Link'>{path ==='/' ? 'Home': capName }</a>
         </li>
     </Link>
   )
