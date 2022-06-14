@@ -15,9 +15,8 @@ body {
 }
 /* Hide scrollbar for IE, Edge and Firefox */
 body::-webkit-scrollbar {
-  display: none;
+  display: none!important;
 }
-
 
 a {
   color: inherit;

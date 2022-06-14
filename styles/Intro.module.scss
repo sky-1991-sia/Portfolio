@@ -14,6 +14,7 @@ sans-serif; */
 @import 'colors' ;
 
 .Intro{
+    padding-bottom: 5rem;
     font-family: 'ROBOTO';
     // padding: 1rem;
     padding-top: 0;
@@ -24,7 +25,7 @@ sans-serif; */
         max-width: 500px;
         // max-height: 400px;
         // box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.206);
-        padding: 2rem;
+        // padding: 2rem;
         padding-top: 0;
         display: grid;
         //NAME and TITLE
@@ -94,32 +95,24 @@ sans-serif; */
 
 
 // TABLET
+//in last check of full responsive clear repititive codes !!!!!!!!!
 @media screen and (min-width:550px) and (max-width:899px) {
     .Intro {
-            font-family: 'ROBOTO';
-            padding: 1rem;
-            padding-top: 0;
-            display: grid;
-            justify-content: center;
-    
             &__card {
                 min-width: 250px;
                 max-width: 500px;
                 // max-height: 400px;
                 // box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.206);
-                padding: 2rem;
-                padding-top: 0;
                 display: grid;
     
                 //NAME and TITLE
                 &__name {
                     // @include c-primary;
-                    color: rgba(0, 0, 0, 0.551);
-                    font-family: 'Palanquin';
-                    font-weight: bolder;
+                    
                 }
     
                 &__title {
+                    //change if need
                     font-size: 2rem;
                     line-height: 1rem;
                 }
@@ -148,30 +141,6 @@ sans-serif; */
     
                     }
                 }
-    
-                // BTN
-                &__btn {
-                    width: 100%;
-                    max-height: 4rem;
-                    padding: 0.85rem 0;
-                    border: 2px solid rgba(0, 0, 0, 0);
-                    border-radius: 50px;
-                    font-family: 'ROBOTO';
-                    font-weight: bold;
-                    letter-spacing: 5px;
-                    @include bg-black;
-                    @include c-primary;
-                    transition: background-color 1s ease-in-out;
-                    cursor: pointer;
-    
-                    &:hover {
-                        @include bg-primary;
-                        @include c-black;
-                        border: 2px solid black;
-                        letter-spacing: 1px;
-                    }
-                }
-    
     
             }
         }
