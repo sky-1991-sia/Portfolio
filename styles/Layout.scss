@@ -266,141 +266,143 @@
 
 
 //cardskills listStyle colors
-.icon {
-    list-style: none;
-    line-height:1.5rem;
-    &::before {
-        content: '';
-        display: inline-block;
-        height: 0.5rem;
-        width: 0.5rem;
-        background: rgba(0, 0, 0, 0.349);
-        border-radius: 50%;
-        margin-right: 1rem;
-        opacity: 50%;
-    }
-}
+// .icon {
+//     list-style: none;
+//     line-height:1.5rem;
+//     z-index: -1;
+//     &::before {
+//         z-index: -1;
+//         content: '';
+//         display: inline-block;
+//         height: 0.5rem;
+//         width: 0.5rem;
+//         background: rgba(0, 0, 0, 0.349);
+//         border-radius: 50%;
+//         margin-right: 1rem;
+//         opacity: 50%;
+//     }
+// }
 
-.icon.Html {
-    list-style: none;
+// .icon.Html {
+//     list-style: none;
 
-    &::before {
-        background: #EF4923;
-    }
-}
-.icon.Css {
-    list-style: none;
+//     &::before {
+//         background: #EF4923;
+//     }
+// }
+// .icon.Css {
+//     list-style: none;
 
-    &::before {
-        background: #4159A7;
-    }
-}
-.icon.Js {
-    list-style: none;
+//     &::before {
+//         background: #4159A7;
+//     }
+// }
+// .icon.Js {
+//     list-style: none;
 
-    &::before {
-        background: #F5CE0F;
-    }
-}
-.icon.Sass {
-    list-style: none;
+//     &::before {
+//         background: #F5CE0F;
+//     }
+// }
+// .icon.Sass {
+//     list-style: none;
 
-    &::before {
-        background: #CA73AE;
-    }
-}
-.icon.Bootstrap {
-    list-style: none;
+//     &::before {
+//         background: #CA73AE;
+//     }
+// }
+// .icon.Bootstrap {
+//     list-style: none;
 
-    &::before {
-        background: #533B79;
-    }
-}
-.icon.Ai {
-    list-style: none;
+//     &::before {
+//         background: #533B79;
+//     }
+// }
+// .icon.Ai {
+//     list-style: none;
 
-    &::before {
-        background: #F5841F;
-    }
-}
-.icon.Ae {
-    list-style: none;
+//     &::before {
+//         background: #F5841F;
+//     }
+// }
+// .icon.Ae {
+//     list-style: none;
 
-    &::before {
-        background: #BC9BC9;
-    }
-}
-.icon.Webpack {
-    list-style: none;
+//     &::before {
+//         background: #BC9BC9;
+//     }
+// }
+// .icon.Webpack {
+//     list-style: none;
 
-    &::before {
-        background: #0062AD;
-    }
-}
-.icon.React {
-    list-style: none;
+//     &::before {
+//         background: #0062AD;
+//     }
+// }
+// .icon.React {
+//     list-style: none;
 
-    &::before {
-        background: #9ADFF4;
-    }
-}
-.icon.Xd {
-    list-style: none;
+//     &::before {
+//         background: #9ADFF4;
+//     }
+// }
+// .icon.Xd {
+//     list-style: none;
 
-    &::before {
-        background: #D15A9B;
-    }
-}
-.icon.Redux {
-    list-style: none;
+//     &::before {
+//         background: #D15A9B;
+//     }
+// }
+// .icon.Redux {
+//     list-style: none;
 
-    &::before {
-        background: #6E54A4;              
-    }
-}
-.icon.Next {
-    list-style: none;
+//     &::before {
+//         background: #6E54A4;              
+//     }
+// }
+// .icon.Next {
+//     list-style: none;
 
-    &::before {
-        background: #000000;
-    }
-}
-.icon.Express {
-    list-style: none;
+//     &::before {
+//         background: #000000;
+//     }
+// }
+// .icon.Express {
+//     list-style: none;
 
-    &::before {
-        background: #000000;
-    }
-}
+//     &::before {
+//         background: #000000;
+//     }
+// }
  
-.icon.Node {
-    list-style: none;
+// .icon.Node {
+//     list-style: none;
 
-    &::before {
-        background: #5FA241;
-    }
-}
+//     &::before {
+//         background: #5FA241;
+//     }
+// }
  
-.icon.Mongodb {
-    list-style: none;
+// .icon.Mongodb {
+//     list-style: none;
 
-    &::before {
-        background: #5FA241;
-    }
-}
+//     &::before {
+//         background: #5FA241;
+//     }
+// }
  
-.icon.Mui {
-    list-style: none;
+// .icon.Mui {
+//     list-style: none;
 
-    &::before {
-        background: #1E9BD8;
-    }
-}
-.icon.Git {
-    list-style: none;
+//     &::before {
+//         background: #1E9BD8;
+//     }
+// }
+// .icon.Git {
+//     list-style: none;
 
-    &::before {
-        background: #E1426A;
-    }
-}
+//     &::before {
+//         background: #E1426A;
+//     }
+// }
  

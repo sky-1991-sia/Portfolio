@@ -17,6 +17,7 @@
             letter-spacing: 0rem;
             word-spacing: 0rem;
         }
+
     }
 }
 .Card{
@@ -26,6 +27,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    &__Item{
+        list-style: none;
+    }
 }
 
 .Banner{
@@ -40,24 +45,5 @@
 }
 
 
-.icon{
-    list-style: none;
-    &::before {
-            content: '';
-            display: inline-block;
-            height: 0.5rem;
-            width: 0.5rem;
-            background: rgba(0, 0, 0, 0.349);
-            border-radius: 50%;
-            margin-right: 1rem;
-        }
-}
-
-.icon.Html{
-    list-style: none;
-    &::before {
-            background: rgb(255, 0, 0);
-        }
-}
 
 
