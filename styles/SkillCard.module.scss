@@ -29,7 +29,8 @@
     justify-content: space-between;
 
     &__Item{
-        list-style: none;
+        // list-style: none;
+        line-height: 150%;
     }
 }
 

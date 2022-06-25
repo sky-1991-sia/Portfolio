@@ -10,8 +10,11 @@ const skills = [
         icon:'Html',
         description:'HTML asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'some feature 1',
-            
+            'HTML fundamentals',
+            'semantic HTML',
+            'forms and validation',
+            'accessibility',
+            'technical SEO',
         ]
     },
     {
@@ -20,11 +23,13 @@ const skills = [
         icon:'Css',
         description:'CSS asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'some feature 1',
-            'some feature 2',
-            'some feature 3',
-            'some feature 4',
-            'some feature 5',
+            'CSS fundamentals',
+            'layouts',
+            'responsive design / media querys',
+            'flex / Grid',
+            'mobile first design',
+            'BEM',
+            'box model / display / positioning',
         ]
     },
     {
@@ -33,10 +38,11 @@ const skills = [
         icon:'Sass',
         description:'Js  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'some feature 1',
-            
-            'some feature 4',
-            'some feature 5',
+            'Nested style',
+            'Mixin',
+            'Varibles',
+            'Data iterate',
+            'Best practices',
         ]
     },
     {
@@ -45,15 +51,10 @@ const skills = [
         icon:'Bootstrap',
         description:'React  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'some feature 1',
-            'some feature 2',
-            'some feature 3',
-            'some feature 2',
-            'some feature 3',
-            'some feature 2',
-            'some feature 3',
-            'some feature 4',
-            'some feature 5',
+            'BS fundamentals',
+            'Responsive pattern',
+            'Usage',
+            'Docs',
         ]
     },
     {
@@ -62,9 +63,10 @@ const skills = [
         icon:'Mui',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'some feature 1',
-            
-            'some feature 5',
+            'MUI fundamentals',
+            'Responsive pattern',
+            'Usage',
+            'Docs',
         ]
     },
     {
