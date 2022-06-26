@@ -248,13 +248,7 @@ const skills = [
         ]
     }
 ]
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
 const SkillCards = () => {
-    useEffect(() => {
-       AOS.init();
-    })
   return (
     <section className={styles.Cards} >
         <h3 className={styles.Cards__title}>Scroll To Explore Skills</h3>
@@ -264,16 +258,20 @@ const SkillCards = () => {
                              skills.map(skill => (
                                  <>
                                  <Grid 
-                                 data-aos="fade-up"
-                                 data-aos-offset="500"
-                                 data-aos-delay="50"
-                                 data-aos-duration="1000"
+                                 //github AOS
+                                 data-aos="sm-fade-up-lg-slide-right"
+                                 data-aos-offset="400"
+                                 data-aos-duration="1300"
+                                 //github AOS  
                                  key={skill.id}
-                                 className={styles.CardCon} 
+                                 className={styles.CardCon}
+                                 //MUI 
                                  justifyContent="center" 
                                  container 
                                  item 
-                                 xs={12} md={6} xl={4}>
+                                 xs={12} md={6} xl={4}
+                                 //MUI
+                                 >
                                    <SkillCard key={skill.id} {...skill} /> 
                                  </Grid>
                                  </>

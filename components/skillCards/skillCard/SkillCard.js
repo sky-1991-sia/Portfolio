@@ -6,7 +6,7 @@ const skillCard = ({title, description, features , icon}) => {
     <Paper elevation={2} className={styles.Card}>
       <section role='banner' className={styles.Banner}>
         <h3>{title}</h3>
-        {/* must change with next Image components for beeter perfomance */}
+        {/* must change with next Image components for better perfomance */}
         <img src={`./${icon}.svg`} alt="test" />
       </section>
       <ul>
