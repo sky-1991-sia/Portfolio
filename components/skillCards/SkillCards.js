@@ -10,11 +10,12 @@ const skills = [
         icon:'Html',
         description:'HTML asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'HTML fundamentals',
+            'fundamentals',
             'semantic HTML',
             'forms and validation',
             'accessibility',
             'technical SEO',
+            'SVG / CANVAS',
         ]
     },
     {
@@ -75,11 +76,11 @@ const skills = [
         icon:'Js',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'some feature 1',
-            'some feature 2',
-            'some feature 3',
-            'some feature 4',
-            'some feature 5',
+            'syntax and fundamentals',
+            'DOM mainoulation',
+            'ES6 features',
+            'modular javaScript',
+            'hoisting / event bubbling / scope / shadow DOM',
         ]
     },
     {
@@ -88,11 +89,11 @@ const skills = [
         icon:'Webpack',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'some feature 1',
-            'some feature 2',
-            'some feature 3',
-            'some feature 4',
-            'some feature 5',
+            'configs for bundling',
+            'entry / output',
+            'loaders',
+            'plugins',
+            'dev server / production',
         ]
     },
     {
@@ -101,11 +102,16 @@ const skills = [
         icon:'React',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'some feature 1',
-            'some feature 2',
-            'some feature 3',
-            'some feature 4',
-            'some feature 5',
+            'fundamentals',
+            'functional components',
+            'class components',
+            'JSX',
+            'hooks',
+            'props',
+            'state managment',
+            'routes',
+            'auth',
+            'client-side fetch',
         ]
     },
     {
@@ -114,11 +120,11 @@ const skills = [
         icon:'Redux',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'some feature 1',
-            'some feature 2',
-            'some feature 3',
-            'some feature 4',
-            'some feature 5',
+            'fundamentals',
+            'store',
+            'action creators',
+            'reducers',
+            'best practices',
         ]
     },
     {
@@ -127,11 +133,12 @@ const skills = [
         icon:'Node',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'some feature 1',
-            'some feature 2',
-            'some feature 3',
-            'some feature 4',
-            'some feature 5',
+            'basic familarity',
+            'creating server',
+            'connecting to db',
+            'cors',
+            'ENV',
+            'integretion with express',
         ]
     },
     {
@@ -140,11 +147,11 @@ const skills = [
         icon:'Express',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'some feature 1',
-            'some feature 2',
-            'some feature 3',
-            'some feature 4',
-            'some feature 5',
+            'faster server side development',
+            'middleware',
+            'Routing',
+            'Templating',
+            'Debugging',
         ]
     },
     {
@@ -153,11 +160,11 @@ const skills = [
         icon:'Mongodb',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'some feature 1',
-            'some feature 2',
-            'some feature 3',
-            'some feature 4',
-            'some feature 5',
+            'basic familarity',
+            'CRUD',
+            'indexing',
+            'querys',
+            'mongodb atlas',
         ]
     },
     {
@@ -166,11 +173,12 @@ const skills = [
         icon:'Next',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'some feature 1',
-            'some feature 2',
-            'some feature 3',
-            'some feature 4',
-            'some feature 5',
+            'fundamentals',
+            'pre rendering / SSR SSG',
+            'auth',
+            'routes / nested routes / dynamic routes',
+            'apis / dynamic apis',
+            'best practices',
         ]
     },
     {
@@ -179,11 +187,10 @@ const skills = [
         icon:'Git',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'some feature 1',
-            'some feature 2',
-            'some feature 3',
-            'some feature 4',
-            'some feature 5',
+            'fundamentals',
+            'syntax and commands',
+            'usage',
+            'GitHub',
         ]
     },
     {
@@ -192,11 +199,11 @@ const skills = [
         icon:'Xd',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'some feature 1',
-            'some feature 2',
-            'some feature 3',
-            'some feature 4',
-            'some feature 5',
+            'fundamentals',
+            'assets',
+            'components',
+            'prototypes',
+            'exporting design to code',
         ]
     },
     {
@@ -205,11 +212,9 @@ const skills = [
         icon:'Ai',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'some feature 1',
-            'some feature 2',
-            'some feature 3',
-            'some feature 4',
-            'some feature 5',
+            'basic familarity',
+            'basic tools',
+            'complex shape and logo design',
         ]
     },
     {
@@ -218,11 +223,11 @@ const skills = [
         icon:'Ae',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'some feature 1',
-            'some feature 2',
-            'some feature 3',
-            'some feature 4',
-            'some feature 5',
+            'fundamentals',
+            'basic tools',
+            'motion tracking',
+            'masking',
+            'simple projects',
         ]
     }
 ]
