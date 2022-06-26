@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
     <Head>
       <title>portfolio | skyde</title>
       <meta name="description" content="React/Next js developer who is interested about ui/ux and backend at same time" />
+      <meta name="google-site-verification" content="y5Ys5_Mrd_5R4boIGfbtRcYWE26lPceBg1TgxQzYyPw" />
     </Head>
     <Header/>
     <Component {...pageProps} />

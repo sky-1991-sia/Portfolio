@@ -231,6 +231,7 @@ const skills = [
         ]
     }
 ]
+
 const SkillCards = () => {
   return (
     <section className={styles.Cards} >
@@ -240,7 +241,7 @@ const SkillCards = () => {
                          {
                              skills.map(skill => (
                                  <>
-                                 <Grid className={styles.CardCon} justifyContent="center" container item key={skill.id}  xs={12} md={6} xl={4}>
+                                 <Grid key={skill.id}  className={styles.CardCon} justifyContent="center" container item xs={12} md={6} xl={4}>
                                    <SkillCard key={skill.id} {...skill} /> 
                                  </Grid>
                                  </>
