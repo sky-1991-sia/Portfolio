@@ -1,11 +1,12 @@
 import SkillCard from "./skillCard/SkillCard"
 import styles from '../../styles/SkillCard.module.scss'
 import { Grid, Box, Paper } from "@mui/material"
-
+import { useEffect } from 'react'
 
 const skills = [
     {
         id:1,
+        alt:'HTML LOGO SVG',
         title:'HTML',
         icon:'Html',
         description:'HTML asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
@@ -20,6 +21,7 @@ const skills = [
     },
     {
         id:2,
+        alt:'CSS LOGO SVG',
         title:'CSS',
         icon:'Css',
         description:'CSS asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
@@ -35,6 +37,7 @@ const skills = [
     },
     {
         id:3,
+        alt:'SASS LOGO SVG',
         title:'SASS',
         icon:'Sass',
         description:'Js  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
@@ -48,6 +51,7 @@ const skills = [
     },
     {
         id:4,
+        alt:'BOOTSTRAP LOGO SVG',
         title:'BOOTSTRAP',
         icon:'Bootstrap',
         description:'React  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
@@ -60,6 +64,7 @@ const skills = [
     },
     {
         id:5,
+        alt:'MATERIAL LOGO SVG',
         title:'MATERIAL UI',
         icon:'Mui',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
@@ -72,6 +77,7 @@ const skills = [
     },
     {
         id:6,
+        alt:'JAVASCRIPT LOGO SVG',
         title:'JAVASCRIPT',
         icon:'Js',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
@@ -85,6 +91,7 @@ const skills = [
     },
     {
         id:7,
+        alt:'WEBPACK LOGO SVG',
         title:'WEBPACK',
         icon:'Webpack',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
@@ -98,6 +105,7 @@ const skills = [
     },
     {
         id:8,
+        alt:'REACT JS LOGO SVG',
         title:'REACT JS',
         icon:'React',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
@@ -116,6 +124,7 @@ const skills = [
     },
     {
         id:9,
+        alt:'REDUX LOGO SVG',
         title:'REDUX',
         icon:'Redux',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
@@ -129,6 +138,7 @@ const skills = [
     },
     {
         id:10,
+        alt:'NODE JS LOGO SVG',
         title:'NODE JS',
         icon:'Node',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
@@ -143,6 +153,7 @@ const skills = [
     },
     {
         id:11,
+        alt:'EXPRESS JS LOGO SVG',
         title:'EXPRESS JS',
         icon:'Express',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
@@ -156,6 +167,7 @@ const skills = [
     },
     {
         id:12,
+        alt:'MONGO DB LOGO SVG',
         title:'MONGO DB',
         icon:'Mongodb',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
@@ -169,6 +181,7 @@ const skills = [
     },
     {
         id:13,
+        alt:'NEXT JS LOGO SVG',
         title:'NEXT JS',
         icon:'Next',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
@@ -183,6 +196,7 @@ const skills = [
     },
     {
         id:14,
+        alt:'GIT LOGO SVG',
         title:'GIT',
         icon:'Git',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
@@ -195,6 +209,7 @@ const skills = [
     },
     {
         id:15,
+        alt:'ADOBE XD LOGO SVG',
         title:'ADOBE XD',
         icon:'Xd',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
@@ -208,7 +223,8 @@ const skills = [
     },
     {
         id:16,
-        title:'ADOBE ILUSTERATOR',
+        alt:'ADOBE ILLUSTRATOR LOGO SVG',
+        title:'ADOBE ILLUSTRATOR',
         icon:'Ai',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
@@ -219,6 +235,7 @@ const skills = [
     },
     {
         id:17,
+        alt:'ADOBE AFTER EFFECT LOGO SVG',
         title:'ADOBE AFTER EFFECT',
         icon:'Ae',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
@@ -231,8 +248,13 @@ const skills = [
         ]
     }
 ]
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
 const SkillCards = () => {
+    useEffect(() => {
+       AOS.init();
+    })
   return (
     <section className={styles.Cards} >
         <h3 className={styles.Cards__title}>Scroll To Explore Skills</h3>
@@ -241,7 +263,17 @@ const SkillCards = () => {
                          {
                              skills.map(skill => (
                                  <>
-                                 <Grid key={skill.id}  className={styles.CardCon} justifyContent="center" container item xs={12} md={6} xl={4}>
+                                 <Grid 
+                                 data-aos="fade-up"
+                                 data-aos-offset="500"
+                                 data-aos-delay="50"
+                                 data-aos-duration="1000"
+                                 key={skill.id}
+                                 className={styles.CardCon} 
+                                 justifyContent="center" 
+                                 container 
+                                 item 
+                                 xs={12} md={6} xl={4}>
                                    <SkillCard key={skill.id} {...skill} /> 
                                  </Grid>
                                  </>

@@ -6,7 +6,7 @@ import SkillsIntroSvg from '../components/SkillsIntroSvg'
 import styles from '../styles/Home.module.scss'
 
 //lazy loading for intro video
-const Video = React.lazy(() => import('../components/Vid'));
+const QuickIntro = React.lazy(() => import('../components/quickIntro/QuickIntro'));
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <Intro/>
       </section>
       <Suspense fallback={<div>Loading</div>}>
-        <Video/>
+        <QuickIntro/>
       </Suspense>
       {/* <ArticlesShowcase/> */}
       <SkillCards/>
