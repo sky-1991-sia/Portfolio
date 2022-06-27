@@ -34,7 +34,7 @@ export default function Home() {
       {/* <ArticlesShowcase/> */}
       <SkillCards/>
       <ScrollTopBtn/>
-      <FutureSkills/>
+      {/* <FutureSkills/> */}
     </main>
     </>
   )
