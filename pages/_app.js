@@ -4,7 +4,9 @@ import Header from '../components/Layout/Header';
 import Footer from '../components/Layout/Footer';
 import Head from 'next/head';
 
+
 function MyApp({ Component, pageProps }) {
+  
   return (
     <>
     <Head>
