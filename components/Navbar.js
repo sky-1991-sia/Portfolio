@@ -1,9 +1,7 @@
 import Navitem from './Navitem'
-import LogIn from '../public/login.svg'
-import LogOut from '../public/logout.svg'
-import Image from 'next/image'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
+import SignInPop from './popUps/authPops/SignInPop'
 
 const Navbar = () => {
   //temperary(must change with auth)
@@ -32,10 +30,7 @@ const Navbar = () => {
               <Navitem path="/blog" handler={activeHandler} active={active}/>
               <Navitem path="/learn" handler={activeHandler} active={active}/>
         </ul>
-        {user ? 
-        <div className='auth' onClick={userHandler}><Image src={LogIn} alt='test'/></div> 
-        : 
-        <div className='auth' onClick={userHandler}><Image src={LogOut} alt='test'/></div>}
+        <SignInPop/>
     </nav>
   )
 }
