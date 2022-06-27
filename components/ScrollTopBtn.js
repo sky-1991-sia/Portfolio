@@ -28,7 +28,7 @@ const ScrollTopBtn = () => {
         })
     }
   return (
-    <div onClick={goTopHandler} style={{ width:'3rem', height:'3rem', position:'fixed',top:'40%', right:`${visible ? '3%' : '-3rem'}`, borderRadius:'50%', cursor:'pointer', transition:'all 0.5s'}}>
+    <div onClick={goTopHandler} style={{ width:'3rem', height:'3rem', position:'fixed',top:'60%', right:`${visible ? '3%' : '-3rem'}`, borderRadius:'50%', cursor:'pointer', transition:'all 0.5s'}}>
         <img src="./arrow_circle_up.svg" alt="svg" />
     </div>
   )
