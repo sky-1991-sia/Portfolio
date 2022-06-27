@@ -5,7 +5,7 @@ const FutureSkills = () => {
   return (
     <>
     <section className='FutureSkills' style={{padding:'2rem 1.5rem',zIndex:'1',textAlign:'center'}}>
-        <h4>I'm pursuing opportunities which can provide platform for me to :</h4>
+        <h4>Im pursuing opportunities which can provide platform for me to :</h4>
         <Paper style={{background:'#000'}}>
             <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
   <ol className="carousel-indicators">
