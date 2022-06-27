@@ -261,7 +261,7 @@ const SkillCards = () => {
                                  //github AOS
                                  data-aos="sm-fade-up-lg-slide-right"
                                  data-aos-offset="400"
-                                 data-aos-duration="1300"
+                                 data-aos-duration="1100"
                                  //github AOS  
                                  key={skill.id}
                                  className={styles.CardCon}

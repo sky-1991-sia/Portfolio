@@ -8,6 +8,12 @@ function SkillsIntroSvg() {
       e.target.style.opacity = '0';
     },1500)
   }
+  const hadlerClick = (e) => {
+    const yOffset = -300; 
+    const element = document.getElementById(e.target.getAttribute('data-name'));
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({top: y, behavior: 'smooth'});
+  }
   return (
     <svg className="SVG--skills"
       xmlns="http://www.w3.org/2000/svg"
@@ -130,7 +136,7 @@ function SkillsIntroSvg() {
           <g transform="translate(282.419 143.147)">
             <g>
               <circle cx="33.162" cy="33.162" r="33.162" fill="#fff"></circle>
-              <circle
+                <circle
                 cx="31.249"
                 cy="31.249"
                 r="31.249"
@@ -139,7 +145,7 @@ function SkillsIntroSvg() {
                 strokeWidth="3"
                 transform="translate(1.914 1.913)"
               ></circle>
-            </g>
+              </g>
             <g fill="#f5ce0f" transform="translate(13.869 21.08)">
               <path
                 d="M1053.629 273.822h5.219v18.213s.426 7.285-8.026 7.482a8.947 8.947 0 01-7.59-4.936l4.245-2.283a3.722 3.722 0 003.343 2.6c2.542 0 2.809-2.867 2.809-2.867z"
@@ -385,7 +391,7 @@ function SkillsIntroSvg() {
                 r="18.93"
                 stroke="#bdbdbd"
                 strokeWidth="3"
-                data-name="border-5"
+                data-name="Sass"
                 transform="translate(1.159 1.159)"
               ></circle>
             </g>
@@ -919,190 +925,238 @@ function SkillsIntroSvg() {
           </g>
         </g>
         <g fill="rgba(255,255,255,0.01)" strokeWidth="3">
-          <circle className="hoverArea" onMouseOver={hadlerOne} onMouseLeave={hadlerTwo}
+          <circle className="hoverArea" 
+            onMouseOver={hadlerOne}
+            onMouseLeave={hadlerTwo}
+            onClick={hadlerClick}
             strokeWidth="4px"
             cx="22.203"
             cy="22.203"
             r="22.203"
             stroke="#5fa241"
-            data-name="border-10"
+            data-name="Mongodb"
             opacity="0.0"
 
             transform="translate(310.404 319.151)"
           ></circle>
-          <circle className="hoverArea" onMouseOver={hadlerOne} onMouseLeave={hadlerTwo}
+          <circle className="hoverArea" 
+            onMouseOver={hadlerOne}
+            onMouseLeave={hadlerTwo}
+            onClick={hadlerClick}
             strokeWidth="4px"
             cx="21.794"
             cy="21.794"
             r="21.794"
             stroke="#000"
-            data-name="border-10"
+            data-name="Express"
             opacity="0.0"
 
             transform="translate(297.814 248.338)"
           ></circle>
-          <circle className="hoverArea" onMouseOver={hadlerOne} onMouseLeave={hadlerTwo}
+          <circle className="hoverArea" 
+            onMouseOver={hadlerOne}
+            onMouseLeave={hadlerTwo}
+            onClick={hadlerClick}
             strokeWidth="4px"
             cx="23.389"
             cy="23.389"
             r="23.389"
             stroke="#46903e"
-            data-name="border-10"
+            data-name="Node"
             opacity="0.0"
 
             transform="translate(237.631 211.973)"
           ></circle>
-          <circle className="hoverArea" onMouseOver={hadlerOne} onMouseLeave={hadlerTwo}
+          <circle className="hoverArea" 
+            onMouseOver={hadlerOne}
+            onMouseLeave={hadlerTwo}
+            onClick={hadlerClick}
             strokeWidth="4px"
             cx="20.901"
             cy="20.901"
             r="20.901"
             stroke="#0062ad"
-            data-name="border-2"
+            data-name="Webpack"
             opacity="0.0"
 
             transform="translate(183.196 167.442)"
           ></circle>
-          <circle className="hoverArea" onMouseOver={hadlerOne} onMouseLeave={hadlerTwo}
+          <circle className="hoverArea" 
+            onMouseOver={hadlerOne}
+            onMouseLeave={hadlerTwo}
+            onClick={hadlerClick}
             strokeWidth="4px"
             cx="20.294"
             cy="20.294"
             r="20.294"
             stroke="#e1426a"
-            data-name="border"
+            data-name="Git"
             opacity="0.0"
 
             transform="translate(237.441 126.274)"
           ></circle>
-          <circle className="hoverArea" onMouseOver={hadlerOne} onMouseLeave={hadlerTwo}
+          <circle className="hoverArea" 
+            onMouseOver={hadlerOne}
+            onMouseLeave={hadlerTwo}
+            onClick={hadlerClick}
             strokeWidth="4px"
             cx="31.249"
             cy="31.249"
             r="31.249"
             stroke="#f5ce0f"
-            data-name="border"
+            data-name="Js"
             opacity="0.0"
 
             transform="translate(284.333 145.06)"
           ></circle>
-          <circle className="hoverArea" onMouseOver={hadlerOne} onMouseLeave={hadlerTwo}
+          <circle className="hoverArea" 
+            onMouseOver={hadlerOne}
+            onMouseLeave={hadlerTwo}
+            onClick={hadlerClick}
             strokeWidth="4px"
             cx="23.177"
             cy="23.177"
             r="23.177"
             stroke="#4159a7"
-            data-name="border-7"
+            data-name="Css"
             opacity="0.0"
 
             transform="translate(285.868 70.844)"
           ></circle>
-          <circle className="hoverArea" onMouseOver={hadlerOne} onMouseLeave={hadlerTwo}
+          <circle className="hoverArea" 
+            onMouseOver={hadlerOne}
+            onMouseLeave={hadlerTwo}
+            onClick={hadlerClick}
             strokeWidth="4px"
             cx="20.901"
             cy="20.901"
             r="20.901"
             stroke="#ef4923"
-            data-name="border-6"
+            data-name="Html"
             opacity="0.0"
 
             transform="translate(346.432 94.335)"
           ></circle>
-          <circle className="hoverArea" onMouseOver={hadlerOne} onMouseLeave={hadlerTwo}
+          <circle className="hoverArea" 
+            onMouseOver={hadlerOne}
+            onMouseLeave={hadlerTwo}
+            onClick={hadlerClick}
             strokeWidth="4px"
             cx="19.496"
             cy="19.496"
             r="19.496"
             stroke="#1e9bd8"
-            data-name="border-10"
+            data-name="Mui"
             opacity="0.0"
             transform="translate(364.66 159.485)"
           ></circle>
-          <circle className="hoverArea" onMouseOver={hadlerOne} onMouseLeave={hadlerTwo}
+          <circle className="hoverArea" 
+            onMouseOver={hadlerOne}
+            onMouseLeave={hadlerTwo}
+            onClick={hadlerClick}
             strokeWidth="4px"
             cx="23.406"
             cy="23.406"
             r="23.406"
             stroke="#9adff4"
-            data-name="border-3"
+            data-name="React"
             opacity="0.0"
 
             transform="translate(346.487 211.956)"
           ></circle>
-          <circle className="hoverArea" onMouseOver={hadlerOne} onMouseLeave={hadlerTwo}
+          <circle className="hoverArea" 
+            onMouseOver={hadlerOne}
+            onMouseLeave={hadlerTwo}
+            onClick={hadlerClick}
             strokeWidth="4px"
             cx="20.901"
             cy="20.901"
             r="20.901"
             stroke="#000"
-            data-name="border-10"
+            data-name="Next"
             opacity="0.0"
 
             transform="translate(358.708 268.98)"
           ></circle>
-          <circle className="hoverArea" onMouseOver={hadlerOne} onMouseLeave={hadlerTwo}
+          <circle className="hoverArea" 
+            onMouseOver={hadlerOne}
+            onMouseLeave={hadlerTwo}
+            onClick={hadlerClick}
             strokeWidth="4px"
             cx="20.69"
             cy="20.69"
             r="20.69"
             stroke="#6e54a4"
-            data-name="border-10"
+            data-name="Redux"
             opacity="0.0"
 
             transform="translate(419.03 236.4)"
           ></circle>
-          <circle className="hoverArea" onMouseOver={hadlerOne} onMouseLeave={hadlerTwo}
+          <circle className="hoverArea" 
+            onMouseOver={hadlerOne}
+            onMouseLeave={hadlerTwo}
+            onClick={hadlerClick}
             strokeWidth="4px"
             cx="22.179"
             cy="22.179"
             r="22.179"
             stroke="#d15a9b"
-            data-name="border-10"
+            data-name="Xd"
             opacity="0.0"
 
             transform="translate(456.766 177.491)"
           ></circle>
-          <circle className="hoverArea" onMouseOver={hadlerOne} onMouseLeave={hadlerTwo}
+          <circle className="hoverArea" 
+            onMouseOver={hadlerOne}
+            onMouseLeave={hadlerTwo}
+            onClick={hadlerClick}
             strokeWidth="4px"
             cx="18.93"
             cy="18.93"
             r="18.93"
             stroke="#bc9bc9"
-            data-name="border-5"
-            opacity="0.0"
-
+            data-name="Ae"
             transform="translate(449.67 124.217)"
           ></circle>
-          <circle className="hoverArea" onMouseOver={hadlerOne} onMouseLeave={hadlerTwo}
+          <circle className="hoverArea" 
+            onMouseOver={hadlerOne}
+            onMouseLeave={hadlerTwo}
+            onClick={hadlerClick}
             strokeWidth="4px"
             cx="15.84"
             cy="15.84"
             r="15.84"
             stroke="#f5841f"
-            data-name="border-9"
+            data-name="Ai"
             opacity="0.0"
 
             transform="translate(427.758 77.215)"
           ></circle>
-          <circle className="hoverArea" onMouseOver={hadlerOne} onMouseLeave={hadlerTwo}
+          <circle className="hoverArea" 
+            onMouseOver={hadlerOne}
+            onMouseLeave={hadlerTwo}
+            onClick={hadlerClick}
             strokeWidth="4px"
             cx="20.024"
             cy="20.024"
             r="20.024"
             stroke="#533b79"
-            data-name="border-4"
+            data-name="Bootstrap"
             opacity="0.0"
 
             transform="translate(368.559 27.681)"
           ></circle>
-          <circle className="hoverArea" onMouseOver={hadlerOne} onMouseLeave={hadlerTwo}
+          <circle className="hoverArea" 
+            onMouseOver={hadlerOne}
+            onMouseLeave={hadlerTwo}
+            onClick={hadlerClick}
             strokeWidth="4px"
             cx="23.245"
             cy="23.245"
             r="23.245"
             stroke="#ca73ae"
-            data-name="border-5"
+            data-name="Sass"
             opacity="0.0"
-
             transform="translate(283.843 7.374)"
           ></circle>
         </g>

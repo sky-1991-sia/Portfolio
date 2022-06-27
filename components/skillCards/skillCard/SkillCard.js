@@ -4,7 +4,7 @@ import Image from 'next/image'
 const skillCard = ({title, description, features , icon}) => {
   return (
     <Paper elevation={2} className={styles.Card}>
-      <section role='banner' className={styles.Banner}>
+      <section id={icon} role='banner' className={styles.Banner}>
         <h3>{title}</h3>
         {/* must change with next Image components for better perfomance */}
         <img src={`./${icon}.svg`} alt="test" />

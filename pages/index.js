@@ -1,17 +1,20 @@
-import React , { Suspense } from 'react'
-import ArticlesShowcase from '../components/ArticlesShowcase'
+import React , { Suspense, useEffect } from 'react'
+//components
 import Intro from '../components/Intro'
+import ArticlesShowcase from '../components/ArticlesShowcase'
 import SkillCards from '../components/skillCards/SkillCards'
 import SkillsIntroSvg from '../components/SkillsIntroSvg'
+//styles
 import styles from '../styles/Home.module.scss'
+// animate
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
-import { useEffect } from 'react';
-
+import ScrollTopBtn from '../components/ScrollTopBtn'
 //lazy loading for intro video
 const QuickIntro = React.lazy(() => import('../components/quickIntro/QuickIntro'));
-
 //inti AOS for animate components is accsessable in all components in page home
+//if needed animate in other pages move this peace of code to _app.js
+
 export default function Home() {
   useEffect(() => {
        AOS.init();
@@ -27,6 +30,7 @@ export default function Home() {
       </Suspense>
       {/* <ArticlesShowcase/> */}
       <SkillCards/>
+      <ScrollTopBtn/>
     </main>
   )
 }
