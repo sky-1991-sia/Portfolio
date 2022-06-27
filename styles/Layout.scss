@@ -90,11 +90,43 @@
     height: 300px;
     @include bg-black;
     @include c-primary;
-    display: grid;
-    place-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     padding-bottom: 60px;
     //temperary/must delete this lane later
     margin-top: 40rem;
+    &__Social{
+        display: flex;
+        gap: 2.5rem;
+        list-style: none;
+        @include desktop-1{
+            gap: 5rem;
+        }
+        &__Item{
+            width: 33px;
+            height: 33px;
+            transition: transform 0.3s ease-in;
+            &:hover{
+                transform: scale(1.5) rotate(360deg);
+            }
+            @include desktop-1{
+                width: 44px;
+                height: 44px;
+
+            }
+        }
+    }
+    &__Logo{
+        font-size: 2rem;
+        @include desktop-1{
+            font-size: 3rem;
+        }
+        @include desktop-2{
+            font-size: 4rem;
+        }
+
+    }
 }
 
 .SVG--skills {
@@ -262,6 +294,8 @@
 
 //animates components in 2 diffrent way depend on view port
 
+//refactore
+// sm-slide-right-lg-fade-up// must change in both uscases
 [data-aos="sm-fade-up-lg-slide-right"] {
     transform: translateX(-100%);
     &.aos-animate {

@@ -14,7 +14,7 @@ const skillCard = ({title, description, features , icon}) => {
           features.map((f, index) => <li className={styles.Card__Item} key={index}>{f}</li>)
         }
       </ul>
-      <p>{description}</p>
+      <p className={styles.Card__Description}>{description}</p>
     </Paper>
   )
 }

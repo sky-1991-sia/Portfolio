@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: false,
   concurrentFeatures: true,
+  
 }
 
 module.exports = nextConfig
