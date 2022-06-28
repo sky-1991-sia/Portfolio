@@ -12,7 +12,7 @@ const FutureSkills = () => {
   return (
     <>
     <section className={styles.FutureSkills}>
-        <h4 className={styles.FutureSkills__title}>I'm interested about learning</h4>
+        <h4 className={styles.FutureSkills__title}>Im interested about learning</h4>
         <Paper style={{background:'#000'}} elevation={3} 
         data-aos="slide-left" 
         data-aos-offset="350"
