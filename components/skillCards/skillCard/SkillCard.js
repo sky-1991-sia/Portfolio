@@ -9,7 +9,7 @@ const skillCard = ({title, description, features , icon}) => {
         {/* must change with next Image components for better perfomance */}
         <img src={`./${icon}.svg`} alt={`Icon for ${icon}`} />
       </section>
-      <ul>
+      <ul className={styles.Card__List}>
         {
           features.map((f, index) => <li className={styles.Card__Item} key={index}>{f}</li>)
         }

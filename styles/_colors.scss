@@ -44,5 +44,19 @@
     @media only screen and (min-width:1400px) {
         @content
     }
-}
+};
 
+
+
+@mixin sectionTitle {
+    letter-spacing: 0.5rem;
+        word-spacing: 1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        @include c-black;
+    
+        @include mobile {
+            letter-spacing: 0rem;
+            word-spacing: 0rem;
+        }
+}
