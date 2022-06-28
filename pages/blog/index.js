@@ -1,7 +1,9 @@
 
 const index = () => {
   return (
-    <div style={{marginTop:'10rem'}}>this is blog page</div>
+    <div style={{marginTop:'10rem'}}>
+      <h2>Blog</h2>
+    </div>
   )
 }
 

@@ -58,7 +58,11 @@
         align-items: center;
         padding-inline-start: 0;
         height: 100%;
+        margin: 0;
         overflow: scroll;
+        // &::-webkit-scrollbar {
+        //         display: none !important;
+        //     }
         li {
                 cursor: pointer;
                 font-weight: bold;
@@ -74,6 +78,11 @@
                 @include c-primary;
             }
     }
+
+    &__Link{
+        color: unset!important;
+        text-decoration: unset!important;
+    }
     .auth{
         width: 120px;
         height: 100%;
@@ -87,7 +96,7 @@
 
 .Footer{
     z-index: 1;
-    height: 300px;
+    height: 200px;
     @include bg-black;
     @include c-primary;
     display: flex;
@@ -117,8 +126,8 @@
                 transform: scale(1.5) rotate(360deg);
             }
             @include desktop-1{
-                width: 44px;
-                height: 44px;
+                width: 40px;
+                height: 40px;
 
             }
         }
@@ -126,7 +135,7 @@
     &__Logo{
         font-size: 2rem;
         @include desktop-1{
-            font-size: 2.5rem;
+            font-size: 2.2rem;
         }
         @include desktop-2{
             font-size: 3rem;
@@ -255,37 +264,23 @@
 
 
 
-// skills hover
-
-.test{
-    transition: all 1.5s ease-in-out;
-}
-
-
-
-
-
+// skills-SVG hover
 .hoverArea{
     transition: all 1s ease-in-out;
-
+    cursor: pointer;
 }
 
 
+
+//temperary ABOUT
 .about{
     display: grid;
     justify-items: center;
 }
 
 
-.hoverArea{
-    cursor: pointer;
-}
 
-
-
-
-// changing main width responsive//cuz of sideNavBar
-
+// changing main width responsive//cuz of sideNavBar in TABLET size
 @media screen and (min-width:650px) and (max-width:1200px) {
     main{
         width:calc(100% - 125px);
@@ -299,7 +294,6 @@
 
 
 //animates components in 2 diffrent way depend on view port
-
 //refactore
 // sm-slide-right-lg-fade-up// must change in both uscases
 [data-aos="sm-fade-up-lg-slide-right"] {

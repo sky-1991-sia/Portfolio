@@ -7,7 +7,7 @@ const skillCard = ({title, description, features , icon}) => {
       <section id={icon} role='banner' className={styles.Banner}>
         <h3>{title}</h3>
         {/* must change with next Image components for better perfomance */}
-        <img src={`./${icon}.svg`} alt="test" />
+        <img src={`./${icon}.svg`} alt={`Icon for ${icon}`} />
       </section>
       <ul>
         {

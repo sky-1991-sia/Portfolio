@@ -34,6 +34,7 @@ export default function Home() {
       {/* <ArticlesShowcase/> */}
       <SkillCards/>
       <ScrollTopBtn/>
+      <hr style={{margin:'8rem 1.5rem'}}/>
       <FutureSkills/>
     </main>
     </>

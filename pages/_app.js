@@ -1,9 +1,9 @@
 import '../styles/globals.css';
 import '../styles/Layout.scss';
+// import 'bootstrap/dist/css/bootstrap.css'
 import Header from '../components/Layout/Header';
 import Footer from '../components/Layout/Footer';
 import Head from 'next/head';
-import Script from 'next/script'
 
 
 function MyApp({ Component, pageProps }) {
@@ -18,6 +18,7 @@ function MyApp({ Component, pageProps }) {
     <Header/>
     <Component {...pageProps} />
     <Footer/>
+      
     </>
   )
 }

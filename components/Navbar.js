@@ -25,10 +25,7 @@ const Navbar = () => {
               <Navitem path="/projects" handler={activeHandler} active={active}/>
               <Navitem path="/contact" handler={activeHandler} active={active}/>
               <Navitem path="/about" handler={activeHandler} active={active}/>
-              <Navitem path="/quiz" handler={activeHandler} active={active}/>
-              <Navitem path="/interview" handler={activeHandler} active={active}/>
               <Navitem path="/blog" handler={activeHandler} active={active}/>
-              <Navitem path="/learn" handler={activeHandler} active={active}/>
         </ul>
         <SignInPop/>
     </nav>
