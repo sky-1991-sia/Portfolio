@@ -14,11 +14,11 @@ const FutureSkills = () => {
     <section className={styles.FutureSkills}>
         <h4 className={styles.FutureSkills__title}>Im interested about learning</h4>
         <Paper style={{background:'#000'}} elevation={3} 
-        data-aos="slide-left" 
+        data-aos="slide-up" 
         data-aos-offset="350"
         data-aos-delay="50"
         data-aos-duration="1100">
-          <Carousel interval={1500} style={{padding:'4rem'}}>
+          <Carousel interval={1300} style={{padding:'4rem'}}>
              <Carousel.Item>
                <Image
                  width='100%'
