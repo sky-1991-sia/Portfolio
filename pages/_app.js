@@ -3,6 +3,7 @@ import '../styles/Layout.scss';
 import Header from '../components/Layout/Header';
 import Footer from '../components/Layout/Footer';
 import Head from 'next/head';
+import ScrollTopBtn from '../components/ScrollTopBtn';
 
 
 function MyApp({ Component, pageProps }) {
@@ -16,6 +17,7 @@ function MyApp({ Component, pageProps }) {
     </Head>
     <Header/>
     <Component {...pageProps} />
+    <ScrollTopBtn/>
     <Footer/>
       
     </>

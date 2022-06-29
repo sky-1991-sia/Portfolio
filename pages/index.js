@@ -4,14 +4,13 @@ import Intro from '../components/Intro'
 import ArticlesShowcase from '../components/ArticlesShowcase'
 import SkillCards from '../components/skillCards/SkillCards'
 import SkillsIntroSvg from '../components/SkillsIntroSvg'
+import FutureSkills from '../components/futureSkills/FutureSkills'
 import Head from 'next/head'
 //styles
 import styles from '../styles/Home.module.scss'
 // animate
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
-import ScrollTopBtn from '../components/ScrollTopBtn'
-import FutureSkills from '../components/futureSkills/FutureSkills'
 //lazy loading for intro video
 const QuickIntro = React.lazy(() => import('../components/quickIntro/QuickIntro'));
 //inti AOS for animate components is accsessable in all components in page home
@@ -33,7 +32,6 @@ export default function Home() {
       </Suspense>
       {/* <ArticlesShowcase/> */}
       <SkillCards/>
-      <ScrollTopBtn/>
       <hr style={{margin:'8rem 1.5rem'}}/>
       <FutureSkills/>
     </main>

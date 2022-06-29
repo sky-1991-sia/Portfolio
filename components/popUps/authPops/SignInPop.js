@@ -10,6 +10,7 @@ import Image from 'next/image'
 import LogOut from '../../../public/logout.svg' 
 import LogIn from '../../../public/login.svg' 
 import PopUp from './PopUp';
+import AuthForm from '../../forms/authForm/AuthForm';
 
 export default function SignInPop() {
     const [user, setUser] = React.useState(false)
@@ -80,14 +81,7 @@ export default function SignInPop() {
        handleCancel={handleCancel}
        handleAction={handleSubmit}
        open={open}>
-         <form action="">
-           <input type="text" />
-           <input type="text" />
-           <input type="text" />
-           <input type="text" />
-           <input type="text" />
-           <input type="text" />
-         </form>
+       <AuthForm/>
        </PopUp>
 
      {/* LOG OUT DIOLOG // same function with additional 1 */}

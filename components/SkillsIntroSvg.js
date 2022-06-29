@@ -9,7 +9,7 @@ function SkillsIntroSvg() {
     },1500)
   }
   const hadlerClick = (e) => {
-    const yOffset = -300; 
+    const yOffset = -200; 
     //data name of icon is same with skillCard ID
     //on click on svg -- wiill scroll page to related card using ID (data name from design)
     const element = document.getElementById(e.target.getAttribute('data-name'));
