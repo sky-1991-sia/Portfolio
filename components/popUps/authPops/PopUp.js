@@ -22,10 +22,10 @@ const PopUp = ({handleClose, handleCancel, handleAction, title, message,btn0, bt
           {children}
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleCancel} color="primary">
+          <Button onClick={handleCancel} style={{color:'#000'}}>
             {btn0}
           </Button>
-          <Button onClick={handleAction} color="primary" autoFocus>
+          <Button onClick={handleAction} style={{color:'#000'}} autoFocus>
             {btn1}
           </Button>
         </DialogActions>

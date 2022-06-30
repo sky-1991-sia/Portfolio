@@ -1,12 +1,12 @@
 import { Button, Grid } from "@mui/material";
 import { useState } from "react";
+import { signIn , useSession } from 'next-auth/react' 
 import Input from "./Input"
 const AuthForm = () => {
-
     const handleChange = () => {
         console.log('now');
     }
-
+    
     const [isSignup,setIsSignup] = useState(false);
     const [showPassword,setShowPassword] = useState(false);
 
@@ -21,9 +21,23 @@ const AuthForm = () => {
     const handleShowPassword = () => {
         setShowPassword((pre) => !pre)
     }
-    
+
+    const handleSignin = () => {
+        signIn('github')
+    }
+    const handleSignin1 = () => {
+        signIn('google')
+    }
+
   return (
     <form className="form" onSubmit={handleSubmit}>
+            <Button className='submitBtn' onClick={handleSignin} fullWidth variant='contained' style={{background:'#000',margin:'0.5rem 0'}}>
+              GitHub
+            </Button>
+            <Button className='submitBtn' onClick={handleSignin1} fullWidth variant='contained' style={{background:'#000',marginBottom:'0.5rem'}}>
+              Google
+            </Button>
+            <span style={{display:'inline-block', textAlign:'center',width:'100%',margin:'1rem 0'}}>OR</span>
           <Grid container spacing={2}>
             {
               isSignup && (
@@ -38,7 +52,7 @@ const AuthForm = () => {
             { isSignup && <Input name='confirmpassword' type={showPassword ? 'text' : 'password'} label='Repeat Password' handleChange={handleChange} handleShowPassword={handleShowPassword} />}
           </Grid>
           <br />
-          <Button type='submit' fullWidth variant='contained' color='primary' className='submitBtn' >
+          <Button type='submit' fullWidth variant='contained' color='primary' className='submitBtn' style={{background:'#000'}}>
             {isSignup ? 'sign up' : 'sign in'}
           </Button>
           <br />
@@ -56,11 +70,10 @@ const AuthForm = () => {
           /> */}
           <Grid container justifyContent='flex-end'> 
           <Grid item>
-            <Button className='switchModeBtn' onClick={switchMode}>
+            <Button className='switchModeBtn' onClick={switchMode} style={{color:'#000'}}>
               { isSignup ? 'Already have an account? Sign In' : "Don't have an account ? Sign Up" }
             </Button>
           </Grid>
-
           </Grid>
         </form>
   )

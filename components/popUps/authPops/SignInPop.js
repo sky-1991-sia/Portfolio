@@ -6,6 +6,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
+import { signOut, useSession } from 'next-auth/react'
 import Image from 'next/image'
 import LogOut from '../../../public/logout.svg' 
 import LogIn from '../../../public/login.svg' 
@@ -15,7 +16,8 @@ import AuthForm from '../../forms/authForm/AuthForm';
 export default function SignInPop() {
     const [user, setUser] = React.useState(false)
     const [open, setOpen] = React.useState(false);
-
+    // const { data:session } = useSession()
+    
   const handleClickOpen = () => {
       setOpen(true);
     };
@@ -60,6 +62,7 @@ export default function SignInPop() {
         setOpen1(false);
     }
     const handleSubmit1 = () => {
+        // signOut()
         setUser(false);
         setOpen1(false);
   }
@@ -75,7 +78,7 @@ export default function SignInPop() {
       <PopUp
        btn0='Cancel' 
        btn1='Submit' 
-       message='welcome to login' 
+       message='' 
        title='login'
        handleClose={handleClose}
        handleCancel={handleCancel}
@@ -88,13 +91,12 @@ export default function SignInPop() {
       <PopUp
        btn0='Cancel' 
        btn1='LogOut' 
-       message='are you sure to leave ?' 
-       title='Log Out Warning'
+       message='do you wish to leave?' 
+       title='Log Out'
        handleClose={handleClose1}
        handleCancel={handleCancel1}
        handleAction={handleSubmit1}
        open={open1}>
-         <h4>IM HERE AS CHILD</h4>
        </PopUp>
        
     </div>
