@@ -77,9 +77,6 @@ export default function SignInPop() {
       {/* LOG IN DIOLOG */}
       <PopUp
        btn0='Cancel' 
-       btn1='Submit' 
-       message='' 
-       title='login'
        handleClose={handleClose}
        handleCancel={handleCancel}
        handleAction={handleSubmit}

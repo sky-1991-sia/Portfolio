@@ -31,6 +31,13 @@ const AuthForm = () => {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
+            <div style={{display:'grid',justifyItems:'center'}}>
+              <h4>{ isSignup ? "Sign Up" : "Sign In"}</h4>
+              <Button className='switchModeBtn' onClick={switchMode} style={{color:'#000'}}>
+              { isSignup ? 'Already have an account? Sign In' : "Don't have an account ? Sign Up" }
+            </Button>
+            </div>
+            <hr/>
             <Button className='submitBtn' onClick={handleSignin} fullWidth variant='contained' style={{background:'#000',margin:'0.5rem 0'}}>
               GitHub
             </Button>
@@ -55,24 +62,8 @@ const AuthForm = () => {
           <Button type='submit' fullWidth variant='contained' color='primary' className='submitBtn' style={{background:'#000'}}>
             {isSignup ? 'sign up' : 'sign in'}
           </Button>
-          <br />
-          <br />
-          {/* <GoogleLogin
-            clientId= '865991630475-85e42qjs9qi08thu5robqall8nc4mpia.apps.googleusercontent.com'
-            render={(renderProps) => (
-              <Button className='form__googleBtn' color='primary' fullWidth onClick={renderProps.onClick}disabled={renderProps.disabled}startIcon={<Icon/>}variant='contained'>
-                Google Sing In
-              </Button>
-            )} 
-            onSuccess={googleSuccess}
-            onFailure={googleFailure}
-            cookiePolicy='single_host_origin'
-          /> */}
           <Grid container justifyContent='flex-end'> 
           <Grid item>
-            <Button className='switchModeBtn' onClick={switchMode} style={{color:'#000'}}>
-              { isSignup ? 'Already have an account? Sign In' : "Don't have an account ? Sign Up" }
-            </Button>
           </Grid>
           </Grid>
         </form>

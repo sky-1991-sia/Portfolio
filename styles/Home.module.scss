@@ -9,11 +9,11 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
-      min-height: calc(100vh - 120px) !important;
+      // min-height: calc(100vh - 120px) !important;
    }
 }
 
-@media screen and (min-width:900px){
+@media screen and (min-width:1200px){
    .Main{
       &__IntroCon {
             display: flex;

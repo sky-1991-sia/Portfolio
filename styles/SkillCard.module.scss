@@ -18,33 +18,24 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    &__List {
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 10%;
+        justify-content: space-between;
+    }
     
     &__Item{
-        // list-style: none;
         line-height: 150%;
-
-        //need responsive
-        //skill features in card (__List)
-        // @include desktop-1 {
-        // &:nth-child(even){
-        // margin-left: 3rem;
-        // }
-        //     }
-        
+        flex-basis: 40%;
+        min-width: 13rem;
     }
     &__Description{
         padding: 0 1.5rem;
     }
-    // &__List{
-    //     display: grid;
-    //     grid-template-columns: 1fr;
-    //     justify-items: space-between;
-    //     padding-top: 2rem;
-    //     padding-bottom: 2rem;
-    //     @include desktop-1{
-    //         grid-template-columns: repeat(2,1fr);
-    //     }
-    // }
+    
 }
 
 .Banner{

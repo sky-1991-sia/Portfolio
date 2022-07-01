@@ -2,7 +2,7 @@ import SkillCard from "./skillCard/SkillCard"
 import styles from '../../styles/SkillCard.module.scss'
 import { Grid, Box, Paper } from "@mui/material"
 import { useEffect } from 'react'
-
+import QuickIntro from '../quickIntro/QuickIntro'
 const skills = [
     {
         id:1,
@@ -11,12 +11,19 @@ const skills = [
         icon:'Html',
         description:'HTML asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'fundamentals',
             'semantic HTML',
-            'forms and validation',
-            'accessibility',
             'technical SEO',
-            'SVG / CANVAS',
+            'elememts / attributes',
+            'forms / input types',
+            'imports / META tags',
+            'lists / anchor',
+            'tables',
+            'events',
+            'webstorage',
+            'images / multimedia',
+            'frame',
+            'canvas / SVG',
+            'frame',
         ]
     },
     {
@@ -26,13 +33,21 @@ const skills = [
         icon:'Css',
         description:'CSS asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'CSS fundamentals',
-            'layouts',
-            'responsive design / media querys',
-            'flex / Grid',
-            'mobile first design',
+            'selectors(basic/complex)',
+            'Psuedo selectors',
+            'specificity / inheritance',
+            'Box model',
+            'typography',
+            'positions / units / display',
+            'Layout : Flex / Grid',
+            'responsive design',
+            'shadows',
+            'colors / gradiants',
+            'transforms / transition',
+            'animations',
+            'Media queries',
+            'CSS varibles',
             'BEM',
-            'box model / display / positioning',
         ]
     },
     {
@@ -82,11 +97,23 @@ const skills = [
         icon:'Js',
         description:'Node  asr qwer fdsaf asfgaste wegfsadf sdfwef saefsadf asdf',
         features: [
-            'syntax and fundamentals',
-            'DOM mainoulation',
-            'ES6 features',
-            'modular javaScript',
-            'hoisting / event bubbling / scope / shadow DOM',
+            'varibles & primitives',
+            'scope / hoisting',
+            'operators / type conversions',
+            'closures',
+            'objects / methods',
+            'arrays / methods',
+            'functions / arrow funtions',
+            'timeoute / interval',
+            'mudules',
+            'classes / proxies',
+            'ES6 / syntaxes',
+            'prototypes',
+            'iterators / iterables',
+            'destructuring / spread',
+            'THIS keyword',
+            'callbacks / promise',
+            'async await',
         ]
     },
     {
@@ -251,8 +278,8 @@ const skills = [
 const SkillCards = () => {
   return (
     <section className={styles.Cards} >
-        <h3 className={styles.Cards__title}>Scroll To Explore Skills</h3>
-                
+        <h2 className={styles.Cards__title}>Scroll To Explore Skills</h2>
+        {/* <QuickIntro/> */}
                      <Grid container spacing={2}>
                          {
                              skills.map(skill => (

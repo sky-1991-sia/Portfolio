@@ -2,10 +2,11 @@ import Navitem from './Navitem'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 import SignInPop from './popUps/authPops/SignInPop'
+import { useSession } from 'next-auth/react'
 
 const Navbar = () => {
   //temperary(must change with auth)
-  const [ user, setUser] = useState(false);
+  // const [ user, setUser] = useState(false);
   const userHandler = () => {
     setUser((pre) => !pre)
   }

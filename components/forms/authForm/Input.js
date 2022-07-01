@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 import { TextField , Grid , InputAdornment , IconButton } from '@mui/material';
 // import Visbility from '@mui/material/icons/Visibility';
 // import VisbilityOff from '@mui/material/icons/VisibilityOff';
@@ -20,7 +20,7 @@ const Input = ({ half , name , type , label , autoFocus , handleChange , handleS
             endAdornment:(
                 <InputAdornment position='end'>
                     <IconButton onClick={handleShowPassword}>
-                        {/* {type === 'password' ? <Visbility/> : <VisbilityOff/>} */}
+                        {type === 'password' ? <Image width='25rem' height='25rem' src='/visOn.svg'/> : <Image width='25rem' height='25rem' src='/visOff.svg'/>}
                     </IconButton>
                 </InputAdornment>
             )
